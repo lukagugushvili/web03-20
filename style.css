@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+}
+
+.grid-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 200px);
+    gap: 20px;
+    grid-template-areas: 
+    "head head head head "
+    "two five eight eight"
+    "two six nine eleven"
+    "three seven nine twelve"
+    "four seven ten ten"
+    ;
+}
+
+.grid-box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    grid-area: head;
+    color: white;
+}
+
+.header-icons-box {
+    display: flex;
+    gap: 20px;
+}
+
+.box img {
+    width: 30px;
+    height: 30px;
+}
+
+.grid-box1 h2{
+    font-size: 50px;
+}
+
+.grid-box2 {
+    grid-area: two;
+    color: blue;
+    background-color: white;
+}
+
+.grid-container h3 {
+    position: relative;
+    top: 50%;
+    left: 37%;
+}
+
+.grid-box3 {
+    grid-area: three;
+    color: blue;
+    background-color: white;
+}
+
+.grid-box4 {
+    grid-area: four;
+    color: blue;
+    background-color: white;
+}
+
+.grid-box5 {
+    grid-area: five;
+    color: blue;
+    background-color: white;
+}
+
+.grid-box6 {
+    grid-area: six;
+    color: blue;
+    background-color: white;
+}
+
+.grid-box7 {
+    grid-area: seven;
+    color: blue;
+    background-color: white;
+}
+
+.grid-box8 {
+    grid-area: eight;
+    color: blue;
+    background-color: white;
+}
+
+.grid-box9 {
+    grid-area: nine;
+    color: blue;
+    background-color: white;
+}
+
+.grid-box10 {
+    grid-area: ten;
+    color: blue;
+    background-color: white;
+}
+
+.grid-box11 {
+    grid-area: eleven;
+    color: blue;
+    background-color: white;
+} 
+
+.grid-box12 {
+    grid-area: twelve;
+    color: blue;
+    background-color: white;
+}
